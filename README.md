@@ -2,18 +2,19 @@
 
 ## About
 
-A series of courses in the Python programming language from the BEEGEEK team 
+Online courses in IT and information security.
 
 ## Documentation
 
-To check out docs, visit [pygen.ru](https://pygen.ru/).
+To check out docs, visit [codeby.school](https://codeby.school/).
 
 ## Questions
 
-For questions and support please use [email](mailto:support@pygen.ru).
+For questions and support please use [email](mailto:school@codeby.email).
 
 ## Stay In Touch
 
-- [Telegram](https://t.me/pygen_ru)
-- [GitHub](https://github.com/python-generation)
-- [Site](https://pygen.ru/)
+- [Telegram](https://t.me/codeby_sec)
+- [VK](https://vk.com/codeby_net)
+- [YouTube](https://www.youtube.com/c/TheCodeby)
+- [Site](https://codeby.school/)
