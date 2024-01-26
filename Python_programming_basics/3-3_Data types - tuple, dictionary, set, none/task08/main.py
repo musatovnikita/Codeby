@@ -17,4 +17,4 @@ ports1 = {22: ('ssh', 'OpenSSH 7.6'), 25: ('smtp', 'Postfix smtpd'),
 # Так же можно использовать list - список и добавлять новые элементы через
 # условие.
 password_set = {123456, 'Password', 12345, 123456789, 'password1'}
-password_list = (123456, 'Password', 12345, 123456789, 'password1')
+password_list = [123456, 'Password', 12345, 123456789, 'password1']
