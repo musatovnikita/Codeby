@@ -1,7 +1,5 @@
-time_str = input("Введите время: ")
-time_list = time_str.split(":")
-hours = int(time_list[0])
-minutes = int(time_list[1])
+time = input("Введите время: ").split(":")
+hours, minutes = int(time[0]), int(time[1])
 
 if (hours >= 18 and minutes > 0) or hours < 6:
     print("Солнце за горизонтом!")
