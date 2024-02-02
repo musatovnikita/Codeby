@@ -1,0 +1,1 @@
+[print(word[::-1], end=" ") for word in input("Введите строку: ").split()]
