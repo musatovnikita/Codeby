@@ -2,11 +2,11 @@
 
 ## About
 
-Online courses in IT and information security.
+2-month online course Fundamentals of Python Programming
 
 ## Documentation
 
-To check out docs, visit [codeby.school](https://codeby.school/).
+To check out docs, visit [python-basics.codeby.school](https://python-basics.codeby.school/).
 
 ## Questions
 
