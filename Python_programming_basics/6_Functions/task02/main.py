@@ -8,8 +8,7 @@ def count_time_for_gun(ammunition):
            (ammunition // ammunition_in_section) * time_change_section_sec
     if ammunition % ammunition_in_section == 0:
         return result_time - time_change_section_sec
-    else:
-        return result_time
+    return result_time
 
 if __name__ == "__main__":
     ammunition_count = int(input("Введите количество патронов: "))
