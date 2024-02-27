@@ -10,10 +10,8 @@ def filter_cities_by_first_and_last_letter(first_letter, last_letter):
                 filtered_cities.append(city)
     return filtered_cities
 
-
 def write_to_file(data):
-    timestamp = time.strftime("%m-%d_%H-%M-%S")
-    filename = f"results_{timestamp}.txt"
+    filename = time.strftime("results_%m-%d_%H-%M-%S.txt")
     with open(filename, "w") as file:
         for city in data:
             file.write(city + "\n")
@@ -21,11 +19,8 @@ def write_to_file(data):
 
 
 if __name__ == "__main__":
-    first_letter, last_letter = input(
-        "Введите первую и последнюю букву: ").strip().capitalize().split()
-
-    filtered_cities = filter_cities_by_first_and_last_letter(first_letter,
-                                                             last_letter)
+    inp_str = "Введите первую и последнюю букву: "
+    first_letter, last_letter = input(inp_str).strip().capitalize().split()
 
     if filtered_cities:
         print("Список городов:")
