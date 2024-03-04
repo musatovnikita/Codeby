@@ -7,42 +7,15 @@ def get_data():
         print("Выполнение программы было остановлено внешним фактором")
         return False
 
-
-def is_start_as_capital(string):
-    return re.match(r"^[A-Z]", string) is not None
-
-
-def is_contains_latin(string):
-    return re.search(r"[a-zA-Z]", string) is not None
-
-
-def is_contains_digits(string):
-    return re.search(r"\d", string) is not None
-
-
-def is_contains_underscore(string):
-    return '_' in string
-
-
-def is_string_end_correct(string):
-    return re.match(r".*[a-zA-Z\d]$", string) is not None
-
-
-def is_string_length_correct(string):
-    return 8 <= len(string) <= 20
-
-
-def is_password_meet_conditions(string):
-    conditions = [
-        is_start_as_capital(string),
-        is_contains_latin(string),
-        is_contains_digits(string),
-        is_contains_underscore(string),
-        is_string_end_correct(string),
-        is_string_length_correct(string)
-    ]
-    return all(conditions)
-
+def is_password_meet_conditions(password):
+    pattern = (
+        r"^(?=.*[A-Z])"  # Пароль должен содержать хотя бы одну заглавную букву
+        r"(?=.*[a-zA-Z])"  # Пароль должен содержать хотя бы одну латинскую букву
+        r"(?=.*\d)"  # Пароль должен содержать хотя бы одну цифру
+        r"(?=.*_)"  # Пароль должен содержать символ подчеркивания
+        r"[\w\d_]{8,20}$"  # Пароль должен быть длиной от 8 до 20 символов и содержать только буквы, цифры и символ подчеркивания
+    )
+    return re.match(pattern, password) is not None
 
 if __name__ == "__main__":
     password = get_data()
