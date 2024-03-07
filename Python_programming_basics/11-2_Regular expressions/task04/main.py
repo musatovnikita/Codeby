@@ -6,7 +6,7 @@ def extract_credentials(file_name):
         data = file.read()
 
     # Регулярное выражение для извлечения уникальных логинов, доменов и паролей
-    pattern = r'(\b\w+@\w+\.\w+\b)|(\bhttps?://\w+\.\w+\b)|(\b\w{8,}\b)'
+    pattern = r'(\b\w+@\w+\b)|(\b\w+://\w+\b)|(\b\w{8,}\b)'
 
     # Извлекаем уникальные логины, домены и пароли
     unique_credentials = re.findall(pattern, data)
